@@ -1,13 +1,13 @@
-"use client";
+"use client"
 
-import { Toaster as Sonner } from "sonner";
+import { Toaster as Sonner } from "sonner"
 
-import { useTheme } from "./themes";
+import { useTheme } from "./themes"
 
-type ToasterProps = React.ComponentProps<typeof Sonner>;
+type ToasterProps = React.ComponentProps<typeof Sonner>
 
 const Toaster: React.FC<ToasterProps> = (props) => {
-  const { theme = "system" } = useTheme();
+  const { theme = "system" } = useTheme()
 
   return (
     <Sonner
@@ -29,7 +29,7 @@ const Toaster: React.FC<ToasterProps> = (props) => {
       }}
       {...props}
     />
-  );
-};
+  )
+}
 
-export { Toaster };
+export { Toaster }

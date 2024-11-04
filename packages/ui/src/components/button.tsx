@@ -1,10 +1,10 @@
-import { Slot } from "@radix-ui/react-slot";
-import { type VariantProps, cva } from "class-variance-authority";
+import { Slot } from "@radix-ui/react-slot"
+import { type VariantProps, cva } from "class-variance-authority"
 
-import { cn } from "@docbird/ui";
-import type { Icon } from "@docbird/ui/icons";
+import { cn } from "@docbird/ui"
+import type { Icon } from "@docbird/ui/icons"
 
-import { Spinner } from "./spinner";
+import { Spinner } from "./spinner"
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
@@ -33,15 +33,15 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
-);
+  },
+)
 
 export interface ButtonProps
   extends React.ComponentProps<"button">,
     VariantProps<typeof buttonVariants> {
-  asChild?: boolean;
-  isLoading?: boolean;
-  icon?: Icon;
+  asChild?: boolean
+  isLoading?: boolean
+  icon?: Icon
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -54,7 +54,7 @@ const Button: React.FC<ButtonProps> = ({
   asChild = false,
   ...props
 }) => {
-  const Comp = asChild ? Slot : "button";
+  const Comp = asChild ? Slot : "button"
   return (
     <Comp
       className={cn(buttonVariants({ variant, size, className }))}
@@ -68,7 +68,7 @@ const Button: React.FC<ButtonProps> = ({
           <Icon
             className={cn(
               "size-4 stroke-2",
-              typeof children !== "undefined" && "-ms-1 me-2"
+              typeof children !== "undefined" && "-ms-1 me-2",
             )}
             aria-hidden="true"
           />
@@ -76,7 +76,7 @@ const Button: React.FC<ButtonProps> = ({
       )}
       {children}
     </Comp>
-  );
-};
+  )
+}
 
-export { Button, buttonVariants };
+export { Button, buttonVariants }

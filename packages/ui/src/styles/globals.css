@@ -112,9 +112,17 @@
     @apply border-border min-w-0;
   }
   html {
-    text-rendering: optimizelegibility;
+    @apply scroll-smooth;
   }
   body {
     @apply bg-background text-foreground min-h-[100dvh];
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
   }
 }
