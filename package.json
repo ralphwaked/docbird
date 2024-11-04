@@ -1,0 +1,28 @@
+{
+  "name": "docbird",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo run clean",
+    "dev": "turbo watch dev --continue",
+    "dev:web": "turbo watch dev -F @docbird/web...",
+    "format": "pnpm biome check . --write --unsafe",
+    "postinstall": "pnpm lint:ws && pnpm lint:pkg",
+    "lint": "turbo run lint",
+    "lint:pkg": "pnpm dlx sort-package-json@latest 'package.json' 'apps/**/package.json' 'packages/**/package.json' 'tooling/**/package.json'",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "turbo": "~2.1.3",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@9.12.3",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": "^9.6.0"
+  },
+  "engineStrict": true
+}

@@ -1,0 +1,54 @@
+{
+  "name": "@docbird/ui",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./button": "./src/components/button.tsx",
+    "./icons": "./src/icons/index.tsx",
+    "./globals.css": "./src/styles/globals.css",
+    "./postcss.config": "./postcss.config.cjs",
+    "./spinner": "./src/components/spinner.tsx",
+    "./tailwind.config": "./tailwind.config.ts",
+    "./themes": "./src/components/themes.tsx",
+    "./toaster": "./src/components/toaster.tsx",
+    "./tooltip": "./src/components/tooltip.tsx"
+  },
+  "files": [
+    "tailwind.config.ts",
+    "postcss.config.cjs"
+  ],
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-tooltip": "^1.1.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.454.0",
+    "next-themes": "^0.4.1",
+    "postcss": "^8.4.47",
+    "sonner": "^1.7.0",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss": "catalog:",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@docbird/tsconfig": "workspace:*",
+    "@types/react": "catalog:react19",
+    "autoprefixer": "^10.4.20",
+    "next": "catalog:",
+    "react": "catalog:react19",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "next": "catalog:",
+    "react": "catalog:react19"
+  }
+}

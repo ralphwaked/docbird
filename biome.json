@@ -1,0 +1,118 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+
+  "files": {
+    "maxSize": 1572864
+  },
+
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
+  },
+
+  "organizeImports": {
+    "enabled": true,
+    "ignore": [
+      "node_modules",
+      ".next",
+      "dist",
+      ".wrangler",
+      ".react-email",
+      "tsconfig",
+      "qr/codegen.ts"
+    ]
+  },
+
+  "linter": {
+    "enabled": true,
+
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useSemanticElements": "off",
+        "noAutofocus": "off"
+      },
+      "complexity": {
+        "noExtraBooleanCast": "error",
+        "noMultipleSpacesInRegularExpressionLiterals": "error",
+        "noUselessCatch": "error",
+        "noWith": "error"
+      },
+      "correctness": {
+        "noUnusedLabels": "error",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error",
+        "useExhaustiveDependencies": "error"
+      },
+      "performance": {
+        "noDelete": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "style": {
+        "useNodejsImportProtocol": "off",
+        "noParameterAssign": "off",
+        "useBlockStatements": "error",
+        "noNonNullAssertion": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noExplicitAny": "off",
+        "noConsoleLog": "warn"
+      }
+    },
+
+    "ignore": [
+      ".vscode",
+      "node_modules",
+      ".next",
+      "dist",
+      ".react-email",
+      "tsconfig",
+      "qr/codegen.ts"
+    ]
+  },
+
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto",
+    "ignore": [
+      "node_modules",
+      ".next",
+      "dist",
+      ".wrangler",
+      ".react-email",
+      "tsconfig",
+      "qr/codegen.ts"
+    ]
+  },
+
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "double",
+      "attributePosition": "auto"
+    },
+    "globals": ["React", "JSX"]
+  },
+
+  "overrides": [
+    {
+      "include": ["*.js?(x)", "*.ts?(x)", "*.json?(c)"]
+    }
+  ]
+}

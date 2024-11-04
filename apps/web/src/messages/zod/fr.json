@@ -1,0 +1,134 @@
+{
+  "zod": {
+    "errors": {
+      "invalid_type": "Type attendu {expected}, reçu {received}",
+      "invalid_type_received_undefined": "Requis",
+      "invalid_literal": "Valeur littérale non valide, attendu {expected}",
+      "unrecognized_keys": "Clé(s) non reconnue(s) dans l'objet : {keys}",
+      "invalid_union": "Entrée non valide",
+      "invalid_union_discriminator": "Valeur de discriminant non valide. Attendu {options}",
+      "invalid_enum_value": "Valeur d'énumération non valide. Attendu {options}, reçu {received}",
+      "invalid_arguments": "Arguments de fonction non valides",
+      "invalid_return_type": "Type de retour de fonction non valide",
+      "invalid_date": "Date non valide",
+      "custom": "Entrée non valide",
+      "invalid_intersection_types": "Les résultats d'intersection ne peuvent pas être fusionnés",
+      "not_multiple_of": "Le nombre doit être un multiple de {multipleOf}",
+      "not_finite": "Le nombre doit être fini",
+      "invalid_string": {
+        "email": "Adresse {validation} non valide",
+        "emoji": "Emoji {validation} non valide",
+        "url": "URL {validation} non valide",
+        "uuid": "UUID {validation} non valide",
+        "ulid": "ULID {validation} non valide",
+        "ip": "Adresse IP {validation} non valide",
+        "cuid": "CUID {validation} non valide",
+        "cuid2": "CUID2 {validation} non valide",
+        "regex": "Expression régulière non valide",
+        "datetime": "Date et heure {validation} non valide",
+        "startsWith": "Entrée non valide : doit commencer par \"{startsWith}\"",
+        "endsWith": "Entrée non valide : doit se terminer par \"{endsWith}\""
+      },
+      "too_small": {
+        "array": {
+          "exact": "{path, select, missingTranslation {Tableau} other {{path}}} doit contenir exactement {minimum} élément(s)",
+          "inclusive": "{path, select, missingTranslation {Tableau} other {{path}}} doit contenir au moins {minimum} élément(s)",
+          "not_inclusive": "{path, select, missingTranslation {Tableau} other {{path}}} doit contenir plus de {minimum} élément(s)"
+        },
+        "string": {
+          "exact": "{path, select, missingTranslation {Chaîne de caractères} other {{path}}} doit contenir exactement {minimum} caractère(s)",
+          "inclusive": "{path, select, missingTranslation {Chaîne de caractères} other {{path}}} doit contenir au moins {minimum} caractère(s)",
+          "not_inclusive": "{path, select, missingTranslation {Chaîne de caractères} other {{path}}} doit contenir plus de {minimum} caractère(s)"
+        },
+        "number": {
+          "exact": "{path, select, missingTranslation {Nombre} other {{path}}} doit être exactement {minimum}",
+          "inclusive": "{path, select, missingTranslation {Nombre} other {{path}}} doit être supérieur ou égal à {minimum}",
+          "not_inclusive": "{path, select, missingTranslation {Nombre} other {{path}}} doit être supérieur à {minimum}"
+        },
+        "bigint": {
+          "exact": "{path, select, missingTranslation {Nombre} other {{path}}} doit être exactement {minimum}",
+          "inclusive": "{path, select, missingTranslation {Nombre} other {{path}}} doit être supérieur ou égal à {minimum}",
+          "not_inclusive": "{path, select, missingTranslation {Nombre} other {{path}}} doit être supérieur à {minimum}"
+        },
+        "set": {
+          "exact": "Entrée non valide",
+          "inclusive": "Entrée non valide",
+          "not_inclusive": "Entrée non valide"
+        },
+        "date": {
+          "exact": "La date doit être exactement le {minimum, date, short}",
+          "inclusive": "La date doit être postérieure ou égale au {minimum, date, short}",
+          "not_inclusive": "La date doit être postérieure à {minimum, date, short}"
+        }
+      },
+      "too_big": {
+        "array": {
+          "exact": "{path, select, missingTranslation {Tableau} other {{path}}} doit contenir exactement {maximum} élément(s)",
+          "inclusive": "{path, select, missingTranslation {Tableau} other {{path}}} doit contenir au plus {maximum} élément(s)",
+          "not_inclusive": "{path, select, missingTranslation {Tableau} other {{path}}} doit contenir moins de {maximum} élément(s)"
+        },
+        "string": {
+          "exact": "{path, select, missingTranslation {Chaîne de caractères} other {{path}}} doit contenir exactement {maximum} caractère(s)",
+          "inclusive": "{path, select, missingTranslation {Chaîne de caractères} other {{path}}} doit contenir au plus {maximum} caractère(s)",
+          "not_inclusive": "{path, select, missingTranslation {Chaîne de caractères} other {{path}}} doit contenir moins de {maximum} caractère(s)"
+        },
+        "number": {
+          "exact": "{path, select, missingTranslation {Nombre} other {{path}}} doit être exactement {maximum}",
+          "inclusive": "{path, select, missingTranslation {Nombre} other {{path}}} doit être inférieur ou égal à {maximum}",
+          "not_inclusive": "{path, select, missingTranslation {Nombre} other {{path}}} doit être inférieur à {maximum}"
+        },
+        "bigint": {
+          "exact": "{path, select, missingTranslation {Nombre} other {{path}}} doit être exactement {maximum}",
+          "inclusive": "{path, select, missingTranslation {Nombre} other {{path}}} doit être inférieur ou égal à {maximum}",
+          "not_inclusive": "{path, select, missingTranslation {Nombre} other {{path}}} doit être inférieur à {maximum}"
+        },
+        "set": {
+          "exact": "Entrée non valide",
+          "inclusive": "Entrée non valide",
+          "not_inclusive": "Entrée non valide"
+        },
+        "date": {
+          "exact": "La date doit être exactement le {maximum, date, short}",
+          "inclusive": "La date doit être antérieure ou égale au {maximum, date, short}",
+          "not_inclusive": "La date doit être antérieure à {maximum, date, short}"
+        }
+      }
+    },
+    "validations": {
+      "email": "adresse e-mail",
+      "emoji": "emoji",
+      "url": "URL",
+      "uuid": "UUID",
+      "ulid": "ULID",
+      "ip": "adresse IP",
+      "cuid": "CUID",
+      "cuid2": "CUID2",
+      "regex": "expression régulière",
+      "datetime": "date et heure"
+    },
+    "types": {
+      "function": "fonction",
+      "number": "nombre",
+      "string": "chaîne de caractères",
+      "nan": "non numérique",
+      "integer": "entier",
+      "float": "flottant",
+      "boolean": "booléen",
+      "date": "date",
+      "bigint": "grand entier",
+      "undefined": "non défini",
+      "symbol": "symbole",
+      "null": "nul",
+      "array": "tableau",
+      "object": "objet",
+      "unknown": "inconnu",
+      "promise": "promesse",
+      "void": "vide",
+      "never": "jamais",
+      "map": "carte",
+      "set": "ensemble"
+    },
+    "path": {},
+    "custom": {}
+  }
+}

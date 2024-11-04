@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "title": "DocBird",
+    "description": "DocBird is a secure document sharing platform for teams and professionals, offering version control, analytics, and spaces to streamline collaboration and enhance client engagement."
+  },
+  "manifest": {
+    "name": "DocBird App",
+    "short_name": "DocBird",
+    "description": "DocBird - the secure document sharing and tracking platform."
+  },
+  "not_found": {
+    "metadata": {
+      "title": "Not Found - DocBird"
+    },
+    "title": "Page not found.",
+    "description": "Could not find requested resource",
+    "button": "Return Home"
+  },
+  "commin_soon": {
+    "metadata": {
+      "title": "Bientôt disponible - DocBird"
+    },
+    "title": "Bientôt disponible."
+  }
+}

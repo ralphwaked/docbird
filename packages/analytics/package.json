@@ -1,0 +1,31 @@
+{
+  "name": "@docbird/analytics",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.tsx",
+    "./client": "./src/client.ts",
+    "./server": "./src/server.ts"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "posthog-js": "^1.180.1",
+    "posthog-node": "^4.2.1"
+  },
+  "devDependencies": {
+    "@docbird/tsconfig": "workspace:*",
+    "@types/react": "catalog:react19",
+    "react": "catalog:react19",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "react": "catalog:react19"
+  }
+}

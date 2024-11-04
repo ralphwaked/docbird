@@ -1,0 +1,81 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "next/router.d.ts",
+    "next/dist/client/router.d.ts"
+  ],
+
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+
+  "markdownlint.config": {
+    "MD013": false,
+    "MD033": false,
+    "MD041": false
+  },
+
+  "tailwindCSS.experimental.configFile": "./packages/ui/tailwind.config.ts",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
+  "todohighlight.keywords": [
+    {
+      "text": "TODO:",
+      "color": "#ffffff",
+      "backgroundColor": "#8f57cf",
+      "overviewRulerColor": "#8f57cf"
+    },
+    {
+      "text": "DEBUG:",
+      "color": "#ffffff",
+      "backgroundColor": "#11b3e0",
+      "overviewRulerColor": "#11b3e0"
+    },
+    {
+      "text": "REVIEW:",
+      "color": "#ffffff",
+      "backgroundColor": "#e0cf11",
+      "overviewRulerColor": "#e0cf11"
+    }
+  ],
+
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+
+  "files.exclude": {
+    "**/.zed": true,
+    "**/.turbo": true,
+    "**/node_modules": true
+  },
+
+  "search.exclude": {
+    "_": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/node_modules": true
+  }
+}

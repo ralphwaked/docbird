@@ -1,0 +1,9 @@
+{
+  "name": "@docbird/tsconfig",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./base": "./configs/base.json",
+    "./internal-package": "./configs/internal-package.json"
+  }
+}
