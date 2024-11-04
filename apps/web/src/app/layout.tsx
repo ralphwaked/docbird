@@ -33,7 +33,7 @@ export const viewport: Viewport = {
 
 export const preferredRegion = ["cdg1", "fra1", "iad1"]
 
-// export const maxDuration = 60
+export const maxDuration = 60
 
 export default async function Layout({
   children,
