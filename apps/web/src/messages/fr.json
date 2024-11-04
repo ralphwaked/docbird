@@ -15,5 +15,11 @@
     "titre": "Page non trouvé.",
     "description": "Le ressource demandée n'a pas été trouvée",
     "bouton": "Retourner à l'accueil"
+  },
+  "commin_soon": {
+    "metadata": {
+      "title": "Bientôt disponible - DocBird"
+    },
+    "title": "Bientôt disponible."
   }
 }
